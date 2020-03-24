@@ -1,0 +1,28 @@
+<h1>Count</h1>
+
+<a href="/">Start Again!!</a>
+
+{{ fulltext }}
+
+<h1>Total words: {{ countofwords }}</h1>
+
+{{ dict1 }}
+
+{% for word,count in dict1 %}
+{{ word }}
+<br>
+{{ count }}
+<br>
+{% endfor %}
+
+{{ max1 }}
+
+
+{% for word, counttotal in sortedwords %}
+
+{{ word }} - {{ counttotal }}
+<br />
+
+
+
+{% endfor %}
